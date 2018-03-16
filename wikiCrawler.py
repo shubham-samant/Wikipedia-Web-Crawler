@@ -41,7 +41,7 @@ def find_first_link(url):
     return first_link
 
 def continue_crawl(search_history, target_url, max_steps=25):
-    # IF the current article link is the target article we wanted to find
+    # IF the first article link itself is the target article we wanted to find
     if search_history[-1] == target_url:
         print("We've found the target article!")
         return False
